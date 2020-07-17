@@ -14,10 +14,10 @@ st.sidebar.markdown("## Ingresa tus parámetros")
 uf=st.sidebar.number_input("Ingrese Valor de la UF actual, en $",min_value=28667,max_value=40000)
 
 
-r_anual=st.sidebar.slider("Ingrese la rentabilidad en %", min_value=3.0,max_value=7.0,step=0.25,value=5.0)
+r_anual=st.sidebar.slider("Ingrese la rentabilidad ANUAL de sus fondos, en %", min_value=3.0,max_value=7.0,step=0.25,value=5.0)
 r_anual/=100
 saldo_actual=st.sidebar.number_input("Ingrese su saldo actual, en $",min_value=1)
-sueldo_actual=st.sidebar.number_input("Ingresa tu sueldo bruto actual, en $",min_value=320500)
+sueldo_actual=st.sidebar.number_input("Ingrese su sueldo bruto actual, en $",min_value=320500)
 edad_actual=st.sidebar.number_input("Ingrese su edad actual",min_value=18,max_value=65)
 esperanza_vida=st.sidebar.slider("Ingrese la esperanza de vida en años", min_value=70,max_value=120,step=1,value=80)
 
@@ -65,8 +65,8 @@ df=llena_df(df)
 
 monto_pension= f"{int(pension):,}".replace(",",".")
 
-st.markdown("## Debieras pensionarte con un fondo ahorrado de $"+str(int(round(val_fut_65/1e6,0)))+" Millones")
-st.markdown("## Tu pensión mensual sería de  $"+ monto_pension)
+st.markdown("## Debiera pensionarse con un fondo ahorrado de $"+str(int(round(val_fut_65/1e6,0)))+" Millones")
+st.markdown("## Su pensión mensual se estimma en  $"+ monto_pension+", dada una esperanza de vida de" + esperanza_vida+ " años")
 st.markdown("## ")
 st.markdown("## ")
 
