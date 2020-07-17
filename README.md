@@ -1,6 +1,6 @@
 # Simulador pensión
 
-Un sencillo simulador de pensión, para probar funcionamiento de Streamlit.
+Un **muy** sencillo simulador de pensión en Chile, para probar funcionamiento de Streamlit.
 Maqueta, vía heroku, montada [acá](http://simulapension.herokuapp.com).
 
 ## Advertencias
