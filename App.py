@@ -66,7 +66,7 @@ df=llena_df(df)
 monto_pension= f"{int(pension):,}".replace(",",".")
 
 st.markdown("## Debiera pensionarse con un fondo ahorrado de $"+str(int(round(val_fut_65/1e6,0)))+" Millones")
-st.markdown("## Su pensión mensual se estimma en  $"+ monto_pension+", dada una esperanza de vida de" + esperanza_vida+ " años")
+st.markdown("## Su pensión mensual se estimma en  $"+ monto_pension)
 st.markdown("## ")
 st.markdown("## ")
 
